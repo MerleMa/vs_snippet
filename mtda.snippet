@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>mtda</Title>
+			<Shortcut>mtda</Shortcut>
+			<Description>Code snippet for async test method with Task.Run</Description>
+			<Author>Your Name</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Code Language="csharp">
+				<![CDATA[public async Task $MethodName$()
+        {
+            await Task.Run(() =>
+            {
+                $end$
+            });
+        }]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>MethodName</ID>
+					<ToolTip>Method name</ToolTip>
+					<Default>TestMethod</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
